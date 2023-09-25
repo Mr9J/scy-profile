@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anton", sans-serif;
+}
+
+body {
+  position: relative;
+}
+body header {
+  background-color: rgb(159, 45, 32);
+  position: fixed;
+  width: 110px;
+  height: 100vh;
+  z-index: 10;
+  transition: width 0.5s;
+}
+body header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 15px;
+}
+body header nav section.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  height: 211.717px;
+}
+body header nav section.logo a img.logo-image {
+  display: none;
+}
+body header nav section.logo a img.logo-icon {
+  width: 60px;
+}
+body header nav section.logo a h1 {
+  font-size: 26px;
+  color: white;
+  display: none;
+}
+body header nav ul.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+}
+body header nav ul.nav-links li {
+  padding: 10px 0;
+}
+body header nav ul.nav-links li:nth-child(1):hover ~ div.active {
+  top: 4.2%;
+}
+body header nav ul.nav-links li:nth-child(2):hover ~ div.active {
+  top: 29.2%;
+}
+body header nav ul.nav-links li:nth-child(3):hover ~ div.active {
+  top: 54.2%;
+}
+body header nav ul.nav-links li:nth-child(4):hover ~ div.active {
+  top: 79.2%;
+}
+body header nav ul.nav-links li:hover ~ div.active {
+  display: block;
+}
+body header nav ul.nav-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+body header nav ul.nav-links li a:hover {
+  color: rgb(159, 45, 32);
+  transition: 0.3s;
+}
+body header nav ul.nav-links li a i {
+  font-size: 22px;
+  margin-right: 20px;
+}
+body header nav ul.nav-links li a p {
+  font-size: 22px;
+  display: none;
+}
+body header nav ul.nav-links div.active {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 4.2%;
+  left: 0%;
+  z-index: -1;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  display: none;
+  transition: top 0.3s;
+}
+
+header:hover {
+  width: 250px;
+}
+header:hover nav section.logo a img.logo-image {
+  display: inline;
+  width: 150px;
+}
+header:hover nav section.logo a img.logo-icon {
+  display: none;
+}
+header:hover nav section.logo a h1 {
+  display: inline;
+}
+header:hover nav ul.nav-links li a p {
+  display: inline;
+}
+
+body .fixed-background {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -99;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.homepage {
+  background-color: #a79e8b;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+body main section.homepage div.content {
+  padding-left: 250px;
+}
+body main section.homepage div.content h2 {
+  font-size: 3.5rem;
+}
+body main section.homepage div.content h3 {
+  font-size: 2rem;
+}
+body main section.homepage div.cover {
+  position: relative;
+  height: 100vh;
+}
+body main section.homepage div.cover img {
+  height: 100%;
+}
+body main section.homepage div.cover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 30px 20px #a79e8b inset;
+}
+
+body main section.project {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+body main section.project div.project-container {
+  margin-top: 3rem;
+  padding: 2rem;
+  padding-left: 200px;
+  width: 100%;
+  min-height: 80vh;
+  background-color: black;
+  color: white;
+}
+body main section.project div.project-container div.japan-travel {
+  padding: 1rem;
+  margin: 2rem 0rem;
+  display: flex;
+  border-bottom: 3px solid white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main section.project div.project-container div.japan-travel div.description {
+  flex: 7 1 500px;
+}
+body main section.project div.project-container div.japan-travel div.description a {
+  color: white;
+  text-decoration: none;
+}
+body main section.project div.project-container div.japan-travel div.description h4 {
+  padding-left: 5px;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
+body main section.project div.project-container div.japan-travel div.description p {
+  font-size: 1.5rem;
+}
+body main section.project div.project-container div.japan-travel img {
+  margin-right: 2rem;
+  width: 400px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  flex: 3 1 200px;
+}
+body main section.project div.project-container div.japan-travel img:hover {
+  transform: scale(1.1);
+}
+body main section.project div.project-container div.favorite-photo {
+  padding: 1rem;
+  margin: 2rem 0rem;
+  display: flex;
+  border-bottom: 3px solid white;
+  flex-wrap: wrap;
+}
+body main section.project div.project-container div.favorite-photo img {
+  margin-right: 2rem;
+  width: 400px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  flex: 3 1 200px;
+}
+body main section.project div.project-container div.favorite-photo img:hover {
+  transform: scale(1.1);
+}
+body main section.project div.project-container div.favorite-photo div.description {
+  flex: 7 1 500px;
+  width: 100%;
+}
+body main section.project div.project-container div.favorite-photo div.description a {
+  color: white;
+  text-decoration: none;
+}
+body main section.project div.project-container div.favorite-photo div.description h4 {
+  padding-left: 5px;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
+body main section.project div.project-container div.favorite-photo div.description p {
+  font-size: 1.5rem;
+}
+body main section.project div.project-container div.snake-game {
+  padding: 1rem;
+  margin: 2rem 0rem;
+  display: flex;
+  border-bottom: 3px solid white;
+  flex-wrap: wrap;
+}
+body main section.project div.project-container div.snake-game img {
+  margin-right: 2rem;
+  width: 400px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  flex: 3 1 200px;
+}
+body main section.project div.project-container div.snake-game img:hover {
+  transform: scale(1.1);
+}
+body main section.project div.project-container div.snake-game div.description {
+  flex: 7 1 500px;
+}
+body main section.project div.project-container div.snake-game div.description a {
+  color: white;
+  text-decoration: none;
+}
+body main section.project div.project-container div.snake-game div.description h4 {
+  padding-left: 5px;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
+body main section.project div.project-container div.snake-game div.description p {
+  font-size: 1.5rem;
+}
+
+section.about div.content {
+  display: flex;
+  width: 100%;
+  min-height: 80vh;
+  background-color: white;
+  margin-top: 3rem;
+  padding: 2rem;
+  padding-left: 200px;
+  font-size: 2rem;
+  color: rgb(159, 45, 32);
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section.about div.content img {
+  width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  flex: 1 1 300px;
+}
+section.about div.content div.introduction {
+  flex: 9 1 500px;
+}
+
+footer {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */

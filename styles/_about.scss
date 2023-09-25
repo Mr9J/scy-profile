@@ -1,0 +1,23 @@
+section.about {
+  div.content {
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    background-color: white;
+    margin-top: 3rem;
+    padding: 2rem;
+    padding-left: 200px;
+    font-size: 2rem;
+    color: rgb(159, 45, 32);
+    flex-wrap: wrap;
+    overflow: hidden;
+    img {
+      width: 300px;
+      object-fit: contain;
+      flex: 1 1 300px;
+    }
+    div.introduction {
+      flex: 9 1 500px;
+    }
+  }
+}

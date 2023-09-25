@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheng-Ye Sie的網站</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images//favicon-knight.ico" />
+  </head>
+  <body>
+    <img src="./images/1311862.jpeg" alt="" class="fixed-background" />
+
+    <header>
+      <nav>
+        <section class="logo">
+          <a href="#" class="logo"
+            ><img
+              src="./images/dragon.png"
+              alt="dragon-logo"
+              class="logo-image"
+            />
+            <img
+              src="./images/Dragon Quest.png"
+              alt="dragon-quest-logo"
+              class="logo-icon"
+            />
+            <h1>Cheng-Ye Sie's Website</h1></a
+          >
+        </section>
+        <ul class="nav-links">
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-house"></i>
+              <p>首頁</p></a
+            >
+          </li>
+          <li>
+            <a href="#project"
+              ><i class="fa-solid fa-book"></i>
+              <p>作品</p></a
+            >
+          </li>
+          <li>
+            <a href="#about"
+              ><i class="fa-solid fa-user"></i>
+              <p>關於</p></a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="fa-solid fa-envelope"></i>
+              <p>聯絡</p></a
+            >
+          </li>
+
+          <div class="active"></div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="homepage">
+        <div class="content">
+          <h2>WELCOME</h2>
+          <h3>to Cheng-Ye Sie's Website</h3>
+        </div>
+        <div class="cover">
+          <img src="./images/00006-1484453756.png" alt="" />
+        </div>
+      </section>
+
+      <section class="project" id="project">
+        <div class="project-container">
+          <div class="japan-travel">
+            <a
+              href="https://scy-japan-travel-mern.onrender.com/"
+              target="_blank"
+              ><img
+                src="./images/japan-travel-web.png"
+                alt="japan-travel-web.png"
+            /></a>
+            <div class="description">
+              <a
+                href="https://scy-japan-travel-mern.onrender.com/"
+                target="_blank"
+                ><h4>日本旅遊行程規劃</h4></a
+              >
+              <br /><br />
+              <p>
+                網頁架構 :
+                <br />
+                使用React.js作為前端框架，Express、MongoDB、Node.js作為後端服務完成的項目，也就是常見的MERN項目。
+                樣式主要套用了Bootstrap。也用到了Passport套件來驗證使用者的json
+                web token，以及用bcrypt來加密使用者的密碼。
+                <br />
+                <br />
+                設計發想與使用說明 :
+                <br />
+                我本人一直有想找時間去日本旅遊的想法，但是也僅限於想想...
+                <br />
+                之所以會想去日本，是因為我對ACG的興趣。然而不管是遊戲、小說或者漫畫，我都是收藏數位版為主，
+                所以其實也只是嚮往去一趟日本，始終沒有真正開始出遊計畫。
+                <br />
+                如果真的要去，也會因為自己對那些旅遊熱門景點沒有興趣。
+                <br />
+                我不想逛名勝古蹟、也對美食不感興趣。
+                只想集中在那些能滿足自己ACG興趣的地點，導致網路上很多的旅遊計畫無法作為參考。
+                <br />
+                於是就想著能不能把行程計畫拆成一個一個的「點」，分別列出預算，讓人可以自選感興趣行程，自行拼湊，就像自助餐一樣。最終完善自己的計畫。
+                <br />
+                <br />
+                所以這個網站可以讓使用者發布行程，不管是提問、或者供人參考，其他使用者可以對行程發表留言，並點讚收藏。
+              </p>
+            </div>
+          </div>
+          <div class="favorite-photo">
+            <a href="https://scy-favorite-photos.onrender.com/" target="_blank"
+              ><img
+                src="./images/favorite-photos-web.png"
+                alt="favorite-photos-web.png"
+            /></a>
+            <div class="description">
+              <a
+                href="https://scy-favorite-photos.onrender.com/"
+                target="_blank"
+                ><h4>圖片收藏</h4></a
+              >
+              <br />
+              <p>
+                一個搜尋圖片並收藏的網頁
+                <br />
+                <br />
+                網頁架構 :
+                <br />
+                這個網站使用React作為其前端框架，並連接到Pexels.com
+                API作為其後端數據庫。
+                <br />
+                使用firebase來完成Google登入驗證。收藏頁面需要用戶登入後才能訪問。
+                <br />
+                由於這個網站沒有連接其他資料庫，所以收藏的資訊，即pexels的圖片id將會保存在用戶的本機儲存空間。
+                <br />
+                因此即使用戶不登入，也能使用收藏功能，只是無法訪問收藏頁面。
+              </p>
+            </div>
+          </div>
+          <div class="snake-game">
+            <a href="https://scy-snake-eat-snack.netlify.app/" target="_blank">
+              <img src="./images/snake-game-web.png" alt="snake-game-web.png"
+            /></a>
+            <div class="description">
+              <a href="https://scy-snake-eat-snack.netlify.app/" target="_blank"
+                ><h4>貪吃蛇遊戲</h4></a
+              >
+              <br />
+              <p>
+                用javascript製作的簡單小遊戲
+                <br />
+                <br />
+                使用說明 :
+                <br />
+                開始遊戲下方開關可選擇遊戲模式。<br />
+                在簡單模式下，蛇可以穿過牆壁，再從另一端出現。普通模式則是經典的貪吃蛇規則。
+                <br />
+                最高分數將會保存在用戶的本機儲存空間。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="content">
+          <img src="./images//CocaCola.webp" alt="" />
+          <div class="introduction">
+            <h4>關於我</h4>
+            <br />
+            <p>
+              　　我是謝承曄，畢業於國立臺灣師範大學的公民教育與活動領導學系。因為科系名稱容易讓人一頭霧水，所以我簡短說明一下。這個
+              科系主要是培養公民老師為主，也是多數畢業生選擇的職業方向。但是因為學習內容涵蓋經濟、法律，所以也有不少畢業生選擇投入金融產業，或者
+              考取公職。
+              <br />
+              <br />
+              　　在求學期間，我修的主要都是法律科目，所以在畢業後，第一份從事的工作就是公職人員。約兩年的工作經歷（其中有四個月留職停薪服兵役），
+              工作內容穩定，穩定到兩年時間每天都在做一樣的事情。雖然單位是在台北市中正區，但實際是在土城區一處偏僻大樓上班，會去那裡的多半是等待
+              退休的人員，我一個大學剛畢業的人被分配去那，且一待就是兩年，沒有調動跡象，可以說是一個未解之謎。
+              <br />
+              <br />
+              　　由於我負責業務是新收檔案管理，所以被分配到一個單獨樓層辦公，等於是一個人有將近20坪的辦公室（其實那個區域放八個Ｌ型辦公桌仍還有很大空間）。
+              按理說單純的人際關係與工作內容，對我來說應該沒什麼好挑剔的，然而在工作兩年後，我仍然選擇離職。
+              <br />
+              <br />
+              　　人只要活著就能成就什麼吧？然而活著就只是活著。兩年的時間過去，發現自已與過去沒什麼不同，未來也將如此時，不由得突然感到恐慌。
+              於是我開始整理自己的人生。
+              <br />
+              <br />
+              　　首先，我喜歡遊戲，喜歡研究遊戲的機制與關卡的設計，我想要做一個屬於自己的遊戲。萬幸的是在當兵期間認識了一群有同樣興趣的朋友，可以一起努力。
+              當然我不指望完全靠此維生，只是當成人生的side
+              project。我自己可以做策畫與編劇，當然也必須學習程式才行（有鑑於Unity近期的收費風波，可能要選擇其他開發引擎了）。
+              <br />
+              <br />
+              　　但是人畢竟要吃飯的，我也必須工作才行。在工作期間，我們使用的是web-based
+              Application，基於工作需要，我也經常有與開發商接洽的機會，也開始對行業產生了興趣。對於一個想轉換工作跑道，
+              又是一個程式語言零基礎但是有學習需求的人來說，這或許是不錯的選擇。
+              <br />
+              <br />
+              　　所以我嘗試著自學網頁開發，上面的作品就是我三個月努力的結果。
+              <br />
+
+              　　因為我非常喜歡可口可樂纖維+這個飲料，相較原版喝起來，喉嚨感覺更舒適，也不會那麼甜膩。
+              而易拉罐版本更是心頭好，開罐後能在氣量風味最佳的時刻喝完。寶特瓶裝就有點太多，沒有在一定時間喝完，氣泡就不那麼綿密了。
+              這也是我配色大多採用紅白配色的緣由。不過可口可樂的紅色在螢幕上有點太亮，所以我調整成比較暗的紅色。
+              <br />
+              　　網頁封面是我玩stable
+              diffusion算出來的圖，覺得效果還行。我本人頭大不上鏡，所以不好意思放自己的大頭。
+            </p>
+            <br />
+            <br />
+            <h4 id="contact">聯絡我</h4>
+            <br />
+            <p>email : siechengye@gmail.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>Cheng-Ye Sie 2023</h4>
+    </footer>
+  </body>
+</html>
